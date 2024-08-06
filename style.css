@@ -1,0 +1,63 @@
+.layer {
+    width: 800px;
+    padding: 4px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    background-color: aqua;
+
+    .asdf {
+        display: flex;
+        padding: 4px;
+        background-color: aliceblue;
+        border-radius: 4px;
+
+        .img_box {
+            flex: 0 0 auto;
+            width: 200px;
+            height: 200px;
+
+            .img_npc {
+                display: block;
+            }
+        }
+
+        .text_area {
+            flex: 1 1 auto;
+            padding: 0 10px;
+            border-radius: 4px;
+            background-color: #fff;
+
+            .royal_style {
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    width: 35px;
+                    height: 29px;
+                    vertical-align: bottom;
+                    background-image: url('./royal_style.png');
+                }
+            }
+        }
+
+        .btn_select {
+            margin-top: 10px;
+            border: 0;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    }
+
+    .btn_area {
+        display: flex;
+        margin-top: 4px;
+        justify-content: space-between;       
+    }
+
+    .btn_task {
+        flex: 0 0 auto;
+        border: 1px solid green;
+        border-radius: 4px;
+        background-color: rgb(142, 184, 81);
+        color: #fff;
+    }
+}
