@@ -7,65 +7,73 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="item_inventory">
-        <button type="button" class="btn_close"><span class="blind">닫기</span></button>
-        <div class="tab_area">
-            <span class="tab_item">장비</span>
-            <span class="tab_item">장비</span>
-            <span class="tab_item">장비</span>
-            <span class="tab_item">장비</span>
-            <span class="tab_item">장비</span>
+    <div class="container">
+        <div class="item_inventory" style="display: none;">
+            <button type="button" class="btn_close"><span class="blind">닫기</span></button>
+            <div class="tab_area">
+                <span class="tab_item">장비</span>
+                <span class="tab_item">장비</span>
+                <span class="tab_item">장비</span>
+                <span class="tab_item">장비</span>
+                <span class="tab_item">장비</span>
+            </div>
+            <!-- 스크롤 영역 -->
+            <ul class="item_list">
+                <li class="item"><span class="blind">메이플 로얄 스타일</span></li>
+            </ul>
+            <!-- 메소 메포 영역 어케할지 생각 -->
+            <div class="tool_area">
+    
+            </div>
         </div>
-        <!-- 스크롤 영역 -->
-        <ul class="item_list">
-            <li class="item"><span class="blind">메이플 로얄 스타일</span></li>
-        </ul>
-        <!-- 메소 메포 영역 어케할지 생각 -->
-        <div class="tool_area">
+        <p>총 사용 캐시 : <span class="total_money">0</span>캐시</p>
+        <button type="button" class="btn_royalstyle">로얄스타일 까는버튼</button>
+        <div class="layer" style="display: none;">
+            <div class="background">
+                <img src="./img/UtilDlgEx.t.png" alt="">
+                <img src="./img/UtilDlgEx.c.png" alt="">
+                <img src="./img/UtilDlgEx.c.png" alt="">
+                <img src="./img/UtilDlgEx.c.png" alt="">
+                <img src="./img/UtilDlgEx.c.png" alt="">
+                <img src="./img/UtilDlgEx.c.png" alt="">
+                <img src="./img/UtilDlgEx.c.png" alt="">
+                <img src="./img/UtilDlgEx.c.png" alt="">
+                <img src="./img/UtilDlgEx.c.png" alt="">
+                <img src="./img/UtilDlgEx.c.png" alt="">
+                <img src="./img/UtilDlgEx.c.png" alt="">
+                <img src="./img/UtilDlgEx.c.png" alt="">
+                <img src="./img/UtilDlgEx.s.png" alt="">
+            </div>
+            <div class="dialog">
+                <div class="img_box">
+                    <img src="./img/stand.gif" alt="빅 헤드거" class="img_npc" width="70" height="85">
+                    <span class="npc_name"><span class="text">빅 헤드거</span></span>
+                </div>
+                <div class="text_area">
+                    <p class="text text1">
+                        안녕? 난 빅헤드국의 둘째왕자 빅 헤드거라고 해.<br>
+                        <span class="royal_style">메이플 로얄 스타일</span> 쿠폰을 가지고 있다면 내가 최신 스타일의 캐시 아이템 1종을 바꿔줄게. 운이 좋다면 <span class="point_red">어메이징한 옵션이</span> 붙어있는 캐시 의상 아이템도 받을 수가 있지! 어때 지금 바로 쿠폰을 사용할거야?<br>
+    
+                        <button type="button" class="btn_select">지금 바로 메이플 로얄 스타일 쿠폰을 사용!!</button>
+                    </p>
 
+                    <p class="text" style="display: none;">
+                        어때? <span class="item_name">기다란 브라키이이오사우르스</span> 아이템은 잘 받았어? 정말 어메이징하지 않아? 다음번에 또 <span class="point_blue">메이플 로얄스타일 쿠폰</span>이 생기면 나를 찾아와줘
+                    </p>
+                </div>
+                <button type="button" class="btn_next"><span class="blind">다음</span></button>
+            </div>
+            <div class="btn_area">
+                <button type="button" class="btn_close"><span class="blind">대화 그만하기</span></button>
+                <button type="button" class="btn_ok"><span class="blind">확인</span></button>
+            </div>
         </div>
+        
+       
     </div>
-    <div class="layer">
-        <div class="asdf">
-            <div class="img_box">
-                <img src="" alt="엔피시 이미지" class="img_npc">
-                <span class="npm_name">빅 헤드거</span>
-            </div>
-            <div class="text_area">
-                <p class="text">
-                    안녕? 난 빅헤드국의 둘째왕자 빅 헤드거라고 해.<br>
-                    <span class="royal_style">메이플 로얄 스타일</span> 쿠폰을 가지고 있다면 내가 최신 스타일의 캐시 아이템 1종을 바꿔줄게. 운이 좋다면 <span class="red">어메이징한 옵션이</span> 붙어있는 캐시 의상 아이템도 받을 수가 있지! 어때 지금 바로 쿠폰을 사용할거야?<br>
-
-                    <button type="button" class="btn_select">지금 바로 메이플 로얄 스타일 쿠폰을 사용!!</button>
-                </p>
-                <button type="button" class="btn_task next">다음</button>
-            </div>
-        </div>
-        <div class="btn_area">
-            <button type="button" class="btn_task">대화 그만하기</button>
-            <button type="button" class="btn_task">확인</button>
-        </div>
-    </div>
-    <!-- <div class="layer">
-        <div class="asdf">
-            <div class="img_box">
-                <img src="" alt="엔피시 이미지" class="img_npc">
-                <span class="npm_name">빅 헤드거</span>
-            </div>
-            <div class="text_area">
-                <p class="text">
-                    어때? <span class="item_name">졸졸졸 베이비덕</span> 아이템은 잘 받았어? 정말 어메이징하지 않아? 다음번에 또 <span class="blue">메이플 로얄스타일 쿠폰</span>이 생기면 나를 찾아와줘
-                </p>
-            </div>
-        </div>
-        <div class="btn_area">
-            <button type="button" class="btn_task">대화 그만하기</button>
-            <button type="button" class="btn_task">확인</button>
-        </div>
-    </div> -->
     
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="app2.js"></script>
+<script src="app.js"></script>
 </html>
 
