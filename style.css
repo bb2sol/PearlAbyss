@@ -49,7 +49,28 @@ button {
 }
 
 .container {
+    min-width: 519px;
+    width: 100%;
     padding: 100px;
+}
+
+.btn_royalstyle {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 20px 0;
+    border: 1px solid #000;
+    border-radius: 4px;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 35px;
+        height: 29px;
+        margin: 0 auto 4px;
+        background-image: url(./img/royal_style.png);
+        background-repeat: no-repeat;
+    }
 }
 
 .layer {
@@ -200,15 +221,14 @@ button {
     .item_name {
         vertical-align: bottom;
         color: red;
+    }
 
-        &::before {
-            content: '';
-            display: inline-block;
-            width: 30px;
-            height: 34px;
-            vertical-align: bottom;
-            background-image: url('./img/01006593.img.info.icon.png');
-        }
+    .item_img {
+        display: inline-block;
+        width: 30px;
+        height: 34px;
+        vertical-align: bottom;
+        background-image: url('./img/01006593.img.info.icon.png');
     }
 }
 
